@@ -1,0 +1,86 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%", 
+  warning = FALSE
+)
+```
+
+```{r sticker, eval=FALSE, include=FALSE}
+library(showtext)
+font_add("Chiller", "C:/Windows/Fonts/Chiller.ttf")
+showtext_auto()
+
+library(hexSticker)
+
+sticker(subplot = "man/figures/logo/whysospurious_face.png", 
+        s_x = 1.05,
+        s_y = 0.85,
+        s_width = 0.6,
+        s_height = 1, 
+        package  = "whysospurious", 
+        p_x = 1, 
+        p_y = 1.55, 
+        p_color = whysospurious:::colors$joker_green,
+        p_family = "Chiller", 
+        p_size = 21, 
+        h_fill = "#FFFFFF", 
+        h_color = whysospurious:::colors$joker_purple,
+        url = "github.com/schuelkem/whysospurious", 
+        u_color = "#000000", 
+        u_family = "Chiller", 
+        u_size = 5, 
+        u_x = 1.005, 
+        u_y = 0.1, 
+        filename = "man/figures/logo/whysospurious.png")
+```
+
+# whysospurious <img src="man/figures/logo/whysospurious.png" align="right" width="125px" />
+
+<!-- badges: start -->
+[![Under Development](https://img.shields.io/badge/status-under%20development-red.svg)](https://github.com/schuelkem/whysospurious)
+[![Last Commit](https://img.shields.io/github/last-commit/schuelkem/whysospurious.svg)](https://github.com/schuelkem/whysospurious/commits/master)
+<!-- badges: end -->
+
+A package for illustrating the golden rule that "correlation does not imply causation".
+
+## Installation
+
+You can install the latest version of whysospurious from [GitHub](https://github.com) with:
+
+``` r
+remotes::install_github("schuelkem/whysospurious")
+```
+
+## Example
+
+The number of people who drowned by falling into a pool correlates with films Nicolas Cage appeared in (r = 0.67).
+
+```{r example_1}
+library(whysospurious)
+tylervigen_plot2()
+```
+
+## Another Example
+
+Per capita cheese consumption correlates with Number of people who died by becoming tangled in their bedsheets (r = 0.95).
+
+```{r example_2}
+tylervigen_plot3()
+```
+
+## Yet Another Example
+
+People who drowned after falling out of a fishing boat correlates with marriage rate in Kentucky (r = 0.95)
+
+```{r example_3}
+tylervigen_plot9()
+```

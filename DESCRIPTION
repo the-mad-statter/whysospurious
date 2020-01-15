@@ -1,0 +1,24 @@
+Package: whysospurious
+Type: Package
+Title: Why So Spurious?
+Version: 0.1.0
+Authors@R: c( 
+    person("Matthew", "Schuelke", 
+           email = "matt@themadstatter.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5755-1725")), 
+    person("Maya", "Gann-Bociek", 
+           email = "maya.gannbociek@slu.edu", 
+           role = "ctb"))
+Description: Illustrate the golden rule that "correlation does not equal causation" through visualizations.
+License: CCBY-4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: R (>= 2.10)
+Imports: 
+    ggplot2,
+    dplyr,
+    tidyr
+URL: https://github.com/schuelkem/whysospurious
+BugReports: https://github.com/schuelkem/whysospurious/issues
