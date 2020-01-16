@@ -16,6 +16,14 @@ The whysospurious package provides raw data, visualization functions, and ggplot
 The tylervigen objects are sourced from \href{https://www.tylervigen.com/spurious-correlations}{Spurious Correlations}.
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/schuelkem/whysospurious}
+  \item Report bugs at \url{https://github.com/schuelkem/whysospurious/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Matthew Schuelke \email{matt@themadstatter.com} (\href{https://orcid.org/0000-0001-5755-1725}{ORCID})
 

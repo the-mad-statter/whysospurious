@@ -114,6 +114,7 @@
 #' @param ... other arguments not used by this method
 #'
 #' @return Invisibly returns the result of ggplot_build(), which is a list with components that contain the plot itself, the data, information about the scales, panels etc.
+#' @export
 print.ggplot_suppressed <- function(x, ...) {
   # current class vector
   xc <- class(x)
